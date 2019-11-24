@@ -1,13 +1,13 @@
 [package]
 name = "kevlar-example"
 version = "0.1.0"
-authors = ["Steve Pryde <spryde81@gmail.com>"]
+authors = ["Steve Pryde <steve@stevepryde.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-kevlar = { path = "../kevlar" }
+kevlar = "0.1"
 fantoccini = "0.12.0-alpha.4"
 async-trait = "0.1"
 tokio = "0.2.0-alpha.2"
