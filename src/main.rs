@@ -46,12 +46,11 @@ impl MyTest {
         info!("Navigate to Google");
         conn.execute(Command::NavigateTo(
             &session_id,
-            "http://google.com.au".to_owned(),
+            "https://google.com.au".to_owned(),
         )).await?;
-        conn.execute(Command::Status).await?;
         thread::sleep(Duration::new(3, 0));
         info!("Closing browser");
-        conn.execute(Command::DeleteSession(session_id)).await?;
+        conn.execute(Command::DeleteSession(&session_id)).await?;
 
         Ok(())
     }
